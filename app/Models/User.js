@@ -22,6 +22,13 @@ class User extends Model {
   }
 
   /*
+   * Ocultar campos para o retorno da senha
+   */
+  static get hidden () {
+    return ['password']
+  }
+
+  /*
    * User traits
    */
   static get traits () {
